@@ -41,6 +41,7 @@ header.uk-active .uk-navbar-toggle{color:#111}
 header.uk-active{background:#fff;padding:2px 0 1px;box-shadow:0 3px 5px rgba(0,0,0,0.03)}
 header.uk-active .uk-navbar-toggle{min-height:unset;height:auto}
 header.uk-active .uk-navbar-nav a{color:#222}
+header.uk-active .uk-navbar-nav a:hover,header.uk-active .uk-navbar-nav a:focus{color:#555}
 header.uk-active .uk-navbar-nav>li>a:hover:after,header.uk-active .uk-navbar-nav>li>a:focus:after{display:none}
 header.uk-active .number a{color:#222;line-height:47px}
 header.uk-active .number span{display:none}
@@ -133,25 +134,23 @@ header .uk-navbar-toggle{min-width:auto}
     }
 }
 
-.prefooter{
-    h2{margin-top:-20px}
-}
-
 footer{
-    background:#fafafa;padding:50px 0 40px;color:rgb(160, 160, 160);
+    background:#fafafa;padding:50px 0 40px;color:#a0a0a0;
     
     .uk-navbar-nav>li{
         >a{
             min-height:40px;color:$color-grey;text-transform:none;font:14px "Proxima Nova Semibold",sans-serif;
             &:hover,&:focus{color:$color-red}
-       }
+        }
         @media(max-width:1199px){display:none}
-   }
+    }
 
     .phone{
         a{font:20px "Proxima Nova Semibold",sans-serif}
         span{font-size:14px;color:$color-grey}
-   }
+    }
+
+    .address{font-size:16px;color:#525252}
 }
 
 h1,h2,h3,h4,.uk-h1{font-family:'Roboto Condensed',sans-serif;line-height:normal;color:#000}
